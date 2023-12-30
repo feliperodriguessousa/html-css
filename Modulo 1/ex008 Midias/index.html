@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Tenta abrir esse site em vários dispositivos diferentes ou siplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/imagem-pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/imagem-media.png" type="image/png">
+        <img src="Imagens/imagem-grande.png" alt="Image Dinamica Grande">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <audio preload="metadata" controls loop>
+        <source src="Audios/guanacast-33.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="Audios/guanacast-33.mp3" download="Audio Podcast"></a></p>
+    </audio>
+
+    <h1>Reproduzindo Videos hospedados localmente</h1>
+    <p>Esses videos estão hospedados no meu proprio servidor</p>
+    <video width="500" controls>
+        <source src="Videos/meu-video.mp4" type="video/mp4">
+        <source src="Videos/meu-video.m4v" type="video/mp4">
+        <source src="Videos/meu-video.webm" type="video/mp4">
+        <source src="Videos/meu-video.ogv" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução de videos.</p>
+    </video>
+
+    <h1>Reproduzindo Videos Externos</h1>
+    <p>Esses videos estam no youtube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7__r4FVj-EI?si=lrD1t0gPtVoxxXiC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>
